@@ -2,6 +2,9 @@
 <html>
     <head>
         <style>
+            body {
+                background-color: lightblue;
+            }
             ul {
                 list-style-type: none;
                 margin: 0;
@@ -13,7 +16,7 @@
                 text-align: center;
                 border-bottom: 1px solid #555;
                 display: inline;
-                float:left;
+                float:right;
             }
 
             li a {
@@ -27,30 +30,89 @@
             li a:hover {
                 background-color: #111;
             }
+            .Header {
+                overflow:auto
+            }
+            .content {
+                float:left; 
+                width:65.33%;
+            }
+            .block {
+                margin: 25px;
+                padding: 25px;
+                border: 1px solid black;
+                background-color: #EAE7DC;
+            }
+
+            .sideBar {
+                float:left;
+                width:33.33%
+            }
+
         </style>
     </head>
     <body>
 
         <div style="max-width:1000px; margin:auto">
 
-            <h1>header</h1>
+            <div class="Header">
+                <img src="img/hcube.png" alt="logo" style="float:left; transform: rotate(20deg); overflow:hidden">
+
+                <h1 style="margin: 60px">Aaron Hietanen</h1>
+            </div>
+
             <nav>
                 <ul>
-                    <li><a href="default.asp">Home</a></li>
-                    <li><a href="news.asp">News</a></li>
-                    <li><a href="contact.asp">Contact</a></li>
-                    <li><a href="about.asp">About</a></li>
+                    <li><a href="news.asp">Blog</a></li>
+                    <li><a href="contact.asp">Portfolio</a></li>
+                    <li><a href="about.asp">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
                 </ul>
             </nav>
 
 
-            <div style="float:left; border: 1px solid black; width:65.33%">Aaron Hietanen
+            <div class="content">
+                <div class="block">
 
-                <p>The DIV element is a block element, and will always start on a new line and take up the full width available (stretches out to the left and right as far as it can).</p>
+                    <h2>Aaron Hietanen </h2> 
 
+                <p>
+                    The DIV element is a block element, and will always start on a new line and take up the full width available (stretches out to the left and right as far as it can).
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus sem ac mauris viverra, id lobortis mi molestie. Vivamus nec ante quam. In sit amet lacus quis massa finibus iaculis eget at nisl. Nam dui ante, tincidunt fermentum iaculis fringilla, tempor at urna. Nam placerat consequat est, id suscipit dolor varius eget. Donec ac scelerisque elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi tempor turpis ut posuere pulvinar. In tincidunt elit et sem elementum accumsan. Curabitur finibus, nisi vitae dictum venenatis, purus lectus vestibulum arcu, non tristique arcu nibh et elit. Nunc placerat ipsum eu tortor lobortis pretium. Donec sit amet lorem metus. Nam posuere velit nec tortor euismod blandit at ut ante. Duis metus magna, lobortis at mattis nec, finibus id ipsum. Aliquam laoreet justo eget nunc consectetur, bibendum sodales dui aliquam.
+                </p>
+                <p>
+
+Morbi interdum nisi vitae dolor fermentum, et efficitur justo aliquet. Nullam ac erat nunc. Etiam molestie augue nec nisl gravida vestibulum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque blandit placerat dolor. Vivamus sodales mattis urna nec fringilla. Vestibulum in viverra ipsum, rhoncus egestas risus. Nullam at leo id nulla malesuada imperdiet. Suspendisse consequat felis bibendum, feugiat mi quis, condimentum urna. Proin viverra enim ac luctus dapibus. Nulla facilisi. Cras posuere ullamcorper turpis at egestas. Aenean tempus, ex eget tincidunt faucibus, diam lorem venenatis neque, at vestibulum arcu nibh ullamcorper ligula. Nulla neque massa, imperdiet id placerat sed, rhoncus ut velit. Pellentesque congue condimentum velit et ornare.
+
+                </p>
+                <p>
+Mauris mattis sollicitudin eros, vitae imperdiet ligula commodo tempor. Praesent non felis euismod, faucibus sapien sed, vestibulum quam. Nullam sed tempor nisi. Suspendisse pulvinar dolor sit amet sem ultrices, vitae tempor justo auctor. Etiam leo orci, ultrices vitae lectus et, ornare aliquam arcu. Phasellus vestibulum sapien sit amet mi dapibus, ut fermentum lorem convallis. Cras in sem nec turpis tincidunt lacinia id vitae elit. Quisque suscipit, leo eu luctus sagittis, velit nibh malesuada nisi, ut sodales purus erat ut quam. Cras ut rhoncus lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed erat diam, rhoncus sed erat ut, pretium sollicitudin quam.
+                </p>
+                <p>
+Fusce malesuada laoreet leo sed imperdiet. Pellentesque scelerisque tellus mi, non tristique purus egestas ac. In accumsan consequat nulla, eu maximus lorem lobortis in. Nullam tincidunt viverra magna, a consectetur mi sodales porttitor. Vivamus id sapien et tortor cursus tempor et eu massa. Aliquam commodo, dui a dictum auctor, nunc justo cursus leo, tempor lacinia nisl metus a mauris. Quisque pharetra sapien nec pellentesque tempor. Sed fringilla odio quam, eu maximus urna facilisis a.
+                </p>
+                <p>
+Pellentesque bibendum volutpat posuere. Praesent ante lorem, lacinia ut convallis vitae, dictum ut lacus. Aliquam quis eros arcu. In hac habitasse platea dictumst. Mauris laoreet mollis libero et rutrum. Vestibulum rhoncus lectus nec ligula auctor, sit amet rhoncus dolor tincidunt. Praesent ac bibendum libero. Fusce lorem leo, semper vel sem ut, luctus consectetur tellus. Morbi venenatis ac ante eu congue. Vestibulum imperdiet ligula eget neque bibendum, iaculis tempus ex accumsan. Vestibulum malesuada diam et sem egestas, eget scelerisque sem imperdiet. Maecenas ipsum ligula, consequat eget augue ut, lacinia condimentum ligula.
+                </p>
+                </div>
             </div>
 
-            <div style="float:left; border: 1px solid black; width:33.33%">SideBar II</div>
+
+
+            <div class="sideBar" >
+                <div class="block">
+
+                    <h4>SideBar II</h4>
+
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus sem ac mauris viverra, id lobortis mi molestie. Vivamus nec ante quam. In sit amet lacus quis massa finibus iaculis eget at nisl. Nam dui ante, tincidunt fermentum iaculis fringilla, tempor at urna. Nam placerat consequat est, id suscipit dolor varius eget. Donec ac scelerisque elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi tempor turpis ut posuere pulvinar. In tincidunt elit et sem elementum accumsan. Curabitur finibus, nisi vitae dictum venenatis, purus lectus vestibulum arcu, non tristique arcu nibh et elit. Nunc placerat ipsum eu tortor lobortis pretium. Donec sit amet lorem metus. Nam posuere velit nec tortor euismod blandit at ut ante. Duis metus magna, lobortis at mattis nec, finibus id ipsum. Aliquam laoreet justo eget nunc consectetur, bibendum sodales dui aliquam. 
+                </div>
+            </div>
+
+
+            <div>Footer</div>
 
         </div>
 
