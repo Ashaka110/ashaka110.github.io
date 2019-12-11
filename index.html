@@ -1,64 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-            body {
-                background-color: lightblue;
-            }
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: #333;
-            }
-            li {
-                text-align: center;
-                border-bottom: 1px solid #555;
-                display: inline;
-                float:right;
-            }
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <title>Aaron Hietanen</title>
 
-            li a {
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-            /* Change the link color to #111 (black) on hover */
-            li a:hover {
-                background-color: #111;
-            }
-            .Header {
-                overflow:auto
-            }
-            .content {
-                float:left; 
-                width:65.33%;
-            }
-            .block {
-                margin: 25px;
-                padding: 25px;
-                border: 1px solid black;
-                background-color: #EAE7DC;
-            }
+        <link rel="stylesheet" type="text/css" href="index.css">
 
-            .sideBar {
-                float:left;
-                width:33.33%
-            }
-
-        </style>
+         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     </head>
     <body>
 
         <div style="max-width:1000px; margin:auto">
 
             <div class="Header">
-                <img src="img/hcube.png" alt="logo" style="float:left; transform: rotate(20deg); overflow:hidden">
+                
 
-                <h1 style="margin: 60px">Aaron Hietanen</h1>
+                <div style="position:relative">
+                <img src="img/header.png" alt="logo" style="float:left; overflow:hidden; position:relative">
+                <img src="img/hcube.png" alt="logo" style="float:left; transform: rotate(20deg); overflow:hidden; position:absolute; left:1px">
+                <img src="img/hcube.png" alt="logo" style="float:left; transform: rotate(20deg); overflow:hidden; position:absolute; left:2px">
+                <img src="img/hcube.png" alt="logo" style="float:left; transform: rotate(20deg); overflow:hidden; position:absolute; left:3px">
+                <img src="img/hcube.png" alt="logo" style="float:left; transform: rotate(20deg); overflow:hidden; position:absolute; left:4px">
+                <img src="img/hcube.png" alt="logo" style="float:left; transform: rotate(20deg); overflow:hidden; position:absolute; left:5px">
+                <img src="img/hcube.png" alt="logo" style="float:left; transform: rotate(20deg); overflow:hidden; position:absolute; left:6px">
+                <img src="img/hcube.png" alt="logo" style="float:left; transform: rotate(20deg); overflow:hidden; position:absolute; left:7px">
+                <img src="img/hcube.png" alt="logo" style="float:left; transform: rotate(20deg); overflow:hidden; position:absolute; left:8px">
+                <img src="img/hcube.png" alt="logo" style="float:left; transform: rotate(20deg); overflow:hidden; position:absolute; left:9px">
+                <img src="img/hcube.png" alt="logo" style="float:left; transform: rotate(20deg); overflow:hidden; position:absolute; left:10px">
+
+                </div>
+
+
             </div>
 
             <nav>
@@ -70,6 +42,15 @@
                 </ul>
             </nav>
 
+
+            <div style = "overflow:hidden">
+
+            <div class="panPicFrame">
+                <img src="img/3dgif.gif">
+            </div>
+
+                
+            </div>
 
             <div class="content">
                 <div class="block">
@@ -116,5 +97,19 @@ Pellentesque bibendum volutpat posuere. Praesent ante lorem, lacinia ut convalli
 
         </div>
 
+
+
+    <script>
+        //https://codepen.io/ccrch/pen/yyaraz
+
+        $('.panPicFrame').on('mousemove', function(e){
+                $(this).children('img').css(
+                    {'transform-origin': 
+                        ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + 
+                        '% ' + 
+                        ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +
+                        '%'});
+            })
+    </script>
     </body>
 </html>
