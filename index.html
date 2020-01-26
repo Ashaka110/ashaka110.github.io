@@ -12,35 +12,7 @@
 
         <div style="max-width:1000px; margin:auto">
 
-            <div class="Header">
-                
-
-                <div style="position:relative">
-                <img src="img/header.png" alt="logo" style="float:left; overflow:hidden; position:relative">
-                <img src="img/hcube.png" alt="logo" style="float:left; transform: rotate(20deg); overflow:hidden; position:absolute; left:1px">
-                <img src="img/hcube.png" alt="logo" style="float:left; transform: rotate(20deg); overflow:hidden; position:absolute; left:2px">
-                <img src="img/hcube.png" alt="logo" style="float:left; transform: rotate(20deg); overflow:hidden; position:absolute; left:3px">
-                <img src="img/hcube.png" alt="logo" style="float:left; transform: rotate(20deg); overflow:hidden; position:absolute; left:4px">
-                <img src="img/hcube.png" alt="logo" style="float:left; transform: rotate(20deg); overflow:hidden; position:absolute; left:5px">
-                <img src="img/hcube.png" alt="logo" style="float:left; transform: rotate(20deg); overflow:hidden; position:absolute; left:6px">
-                <img src="img/hcube.png" alt="logo" style="float:left; transform: rotate(20deg); overflow:hidden; position:absolute; left:7px">
-                <img src="img/hcube.png" alt="logo" style="float:left; transform: rotate(20deg); overflow:hidden; position:absolute; left:8px">
-                <img src="img/hcube.png" alt="logo" style="float:left; transform: rotate(20deg); overflow:hidden; position:absolute; left:9px">
-                <img src="img/hcube.png" alt="logo" style="float:left; transform: rotate(20deg); overflow:hidden; position:absolute; left:10px">
-
-                </div>
-
-
-            </div>
-
-            <nav>
-                <ul>
-                    <li><a href="news.asp">Blog</a></li>
-                    <li><a href="contact.asp">Portfolio</a></li>
-                    <li><a href="about.asp">Contact</a></li>
-                    <li><a href="index.html">Home</a></li>
-                </ul>
-            </nav>
+            <header></header>
 
 
             <div style = "overflow:hidden">
@@ -54,6 +26,10 @@
 
             <div class="content">
                 <div class="block">
+                    <h1>Hello</h1>
+
+                    I am a programmer, VR Enthusist, 
+
 
                     <h2>Aaron Hietanen </h2> 
 
@@ -110,6 +86,9 @@ Pellentesque bibendum volutpat posuere. Praesent ante lorem, lacinia ut convalli
                         ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +
                         '%'});
             })
+        $(document).ready(function(){
+            $('header').load('./head.html');
+        })
     </script>
     </body>
 </html>
