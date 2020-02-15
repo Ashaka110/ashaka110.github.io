@@ -1,0 +1,96 @@
+
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <title>Aaron Hietanen</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="index.css">
+
+         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    </head>
+    <body>
+        <div class = "container">
+        <header></header>
+
+        <div class="card">
+
+            <div class="card-content">
+            <h1>Chips Portal</h1> 
+
+            <div class = "row">
+                <div class = "col s8">
+
+            <div class="iframe-container"> <iframe src="https://www.youtube.com/embed/3NgKHiCoGhE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+            </div>
+            </div>
+     <blockquote>           <p>
+Chips: portal was my first major programming project.  It is based on the game Chips Challenge, released in 1980 by Chuck Summerville.  I began working on it junior year of high school in my intro to programming class.  I started with building the Chips Challenge mechanics, but later tried creating mechanics of my own, or at least mechanics based on other games, such as Valve's Portal franchise.  I created my own level editor to aid in the level creation process, freeing me from being forced to directly edit text files.  The project went through a re-write
+                </p></blockquote>
+                <br>
+                <p>
+
+The project got it's start around halfway through my intro to Programming class, while we were going over the connect four project.  We were discussing the applications of two dimensional arrays when the idea struck me.  Speciffically, we were going over the win/lose evaluation algorithm when the potential of relative indicies caught my attention.  If I had a position, (x,y), I could check a neghboring position, (x+1,y), and see if that position was walkable.  Additionally, if that tile was a block, and the next space, (x+2,y) was walkable, I could write code so that I could "push" that block to that new position.  In conjunction with gathering input from the terminal, I was quickly able to prototype a simple block pushing game.
+                </p>
+                <br>
+                <p>
+
+From there, I started experementing with other mechanics.  I created water that you could push blocks into to make a bridge, Bugs that would follow the right wall, Gliders that would turn when they hit a wall.  After a while, I started running out of characters to meaningfully display new entities.
+                </p>
+                <br>
+                <p>
+
+One night, I decided to learn how to work with graphics.  I went home, looked up a tutorial on YouTube, and by the next day, I was able to go into class having translated this game from the console to a GUI, featuring graphics I had pulled from the orriginal game.  It took some fiddling to get it working on the schools computers, but when I did, I had the whole class crowding around me to see the specticale.  
+                </p>
+                <br>
+                <p>
+For the last two weeks of class, our instructor said we could take that time to build our own project using what we had learned, as our final assignment.  He said that I could continue working on this project, though I would have to do something other than create levels for it.  I decided to try taking the game in a different direction, by experementing with creating three dimensional levels.
+                </p>
+                <br>
+                <p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RP1TKs5U7ao" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </p>
+                <br>
+                <p>
+
+This particular mechanic works by showing you a two-dimensional cross section of the three dimensional level.  You could preform a rotation by pressing the i,j,k, and l keys, which would rotate the level by 90 degrees allowing you to see a different cross section of the level.  I experemented with adding other mechanics I had previously worked on, such as blocks, water, and enemies.  The enemies were tricky to deal with in three dimensions as it was hard to find an anologe that would be easy for the player to comprehend.  
+                </p>
+                <br>
+                <p>
+
+after I had all of this working, I still had some time left in that two weeks.  My mind wandered to portal, and I finished off the semester by building a prototype for a portal gun mechanic.  
+                </p>
+                <br>
+                <p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pGBBBBV4R0Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </p>
+                <br>
+                <p>
+
+I continued expanding on that concept on my own even after that class ended.  I created lasers and light bridges, like in the original portal games, and figured out ways those mechanics could interact with previously created mechanics.  I remember continueing work on this, even as my family went on vacation that summer.
+                </p>
+                <br>
+                <p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MksiSuM_R74" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </p>
+                <br>
+                <p>
+
+Around this time, I built a level editor, which made my life a ton easier.  
+                </p>
+                            <img src="img/cceditor.png"/>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kHYcwHUZvvM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+            </div>
+        </div>
+    <script>
+        $(document).ready(function(){
+            $('header').load('https://ashaka110.github.io/head.html');
+        })
+    </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+</html>
