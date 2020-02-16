@@ -4,19 +4,90 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <title>Aaron Hietanen</title>
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link rel="stylesheet" type="text/css" href="index.css">
 
          <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="index.css">
     </head>
     <body>
-            <header></header>
+        <header></header>
+        <div class = "container">
 
-                    <h1>Contact</h1> 
+  <nav>
+    <div class="nav-wrapper">
+      <div class="col s12">
+        <a href="index.html" class="breadcrumb">Home</a>
+        <a href="#!" class="breadcrumb">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+            <h1 class= "center" >Contact</h1> 
+
+            <div class = "row flex">
+                <div class="col s12 l6">
+                    <h3 class="center">Let's get in touch!</h3>
+
+
+                <p class="flow-text">
+                Thanks for visiting my site!
+                I can usually be contacted via Linkedin.
+
+                <div style="height: 100px"></div>
+                </p>
+                <a href="https://www.youtube.com/user/unown250" class="waves-effect waves-light btn"><i class="fab fa-youtube"></i> Youtube</a>
+                <a href="https://twitter.com/ashaka110" class="waves-effect waves-light btn"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://www.linkedin.com/in/aaron-h-20653597" class="waves-effect waves-light btn"><i class="fab fa-linkedin "></i> Linkedin</a>
+
+                </div>
+                <div class="col s12 l6">
+                    <img src="img/headshot.jpg" alt="Profile" class ="responsive-img circle">
+                </div>
+
+            </div>
+            <div style="height: 100px"></div>
+            <div class="container">
+                <div class="card" style="padding:40">
+                    <div class="card-content">
+                        <span class="card-title">Send a Message</span>
+                    <form>
+ <div class="row">
+                        <div class="input-field col s6">
+                            <input id="name" type="text">
+                            <label for="name">Name</label>
+                        </div>
+
+                        <div class="input-field col s6">
+                            <input id="email" type="text">
+                            <label for="email">Email</label>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <textarea id="message" type="text" class="materialize-textarea" ></textarea>
+                            <label for="message">Message</label>
+                        </div>
+
+                        </div>
+                    </form>
+                    </div>
+                    <div class="card-action">
+                        <button class="btn right disabled">Submit</button>
+   
+                    </div>
+                </div>
+            </div>
+            <div style="height: 200px"></div>
+        </div>
 
     <script>
         $(document).ready(function(){
-            $('header').loadHTML('head.html');
+            $('header').load('head.html');
+            $('.tooltipped').tooltip();
         })
     </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     </body>
 </html>
