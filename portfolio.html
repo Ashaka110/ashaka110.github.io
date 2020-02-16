@@ -12,12 +12,21 @@
         <link rel="stylesheet" type="text/css" href="index.css">
     </head>
     <body>
-        <div class = "container">
         <header></header>
+        <div class = "container">
 
-            <h1>Portfolio</h1> 
+  <nav>
+    <div class="nav-wrapper">
+      <div class="col s12">
+        <a href="#!" class="breadcrumb">Home</a>
+        <a href="#!" class="breadcrumb">Portfolio</a>
+      </div>
+    </div>
+  </nav>
 
-            <div class = "row">
+            <h1 class= "center" >Portfolio</h1> 
+
+            <div class = "row flex">
 
                 <div class="col s12 l6">
                     <div class="card">
@@ -109,7 +118,7 @@
 
     <script>
         $(document).ready(function(){
-            $('header').load('https://ashaka110.github.io/head.html');
+            $('header').load('head.html');
         })
     </script>
 
