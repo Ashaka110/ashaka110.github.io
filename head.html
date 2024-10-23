@@ -6,11 +6,18 @@
 
 }
 .logo{
-    transform:rotate(20deg);
     width: 140px;
+    left: 15%;
+    @media (width <= 80em) {
+        
+
+        width: 90px;
+        left: 60px;
+
+    }
+    transform:rotate(20deg);
         position:absolute;
     padding: 0px;
-  left: 15%;
   top: 5px;
   right: 10px;
 
@@ -21,6 +28,12 @@
   left: 15%;
   top: 5px;
 
+    @media (width <= 80em) {
+        
+        left: 85px;
+        top: 20px;
+        width: 250px;
+    }
 
 }
 
@@ -30,21 +43,6 @@
             <div>
                 
 
-                <div class ="hide" style="position:relative">
-                    <img src="img/header.png" alt="logo" style="float:left; overflow:hidden; position:relative">
-                    <img src="img/hcube.png" alt="logo" style="float:left; transform: rotate(20deg); overflow:hidden; position:absolute; left:1px">
-                    <img src="img/hcube.png" alt="logo" style="float:left; transform: rotate(20deg); overflow:hidden; position:absolute; left:2px">
-                    <img src="img/hcube.png" alt="logo" style="float:left; transform: rotate(20deg); overflow:hidden; position:absolute; left:3px">
-                    <img src="img/hcube.png" alt="logo" style="float:left; transform: rotate(20deg); overflow:hidden; position:absolute; left:4px">
-                    <img src="img/hcube.png" alt="logo" style="float:left; transform: rotate(20deg); overflow:hidden; position:absolute; left:5px">
-                    <img src="img/hcube.png" alt="logo" style="float:left; transform: rotate(20deg); overflow:hidden; position:absolute; left:6px">
-                    <img src="img/hcube.png" alt="logo" style="float:left; transform: rotate(20deg); overflow:hidden; position:absolute; left:7px">
-                    <img src="img/hcube.png" alt="logo" style="float:left; transform: rotate(20deg); overflow:hidden; position:absolute; left:8px">
-                    <img src="img/hcube.png" alt="logo" style="float:left; transform: rotate(20deg); overflow:hidden; position:absolute; left:9px">
-                    <img src="img/hcube.png" alt="logo" style="float:left; transform: rotate(20deg); overflow:hidden; position:absolute; left:10px">
-
-
-                </div>
         <img src="img/header.png" alt="logo" class="logo-name">
 
         <svg class="logo" viewbox="0 0 250 250">
